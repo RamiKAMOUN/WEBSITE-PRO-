@@ -1,0 +1,405 @@
+.main__header{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+}
+
+.main__header-container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap:6rem;
+}
+
+.main__header-left{
+  margin-top: -1rem;
+}
+
+.main__header-left h4{
+  margin-bottom: 1rem;
+  color:var(--color-secondary);
+  font-weight: 400;
+}
+
+.main__header-left p{
+  margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+}
+
+.main__header-right{
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.main__header-image{
+  position: relative;
+}
+/*-- programs--*/
+
+.programs{
+  margin-top:4rem;
+  margin-left:3rem ;
+  margin-right:3rem ;
+
+}
+
+.programs__wrapper{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:3rem;
+  margin-top:4rem;
+}
+
+.programs__program a {
+  margin-top:2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*-- FAQs--*/
+
+.faqs__wrapper{
+  margin-top:2rem;
+  display: grid;
+  
+  gap:1.5rem 2rem;
+  align-items: flex-start;
+}
+.faq{
+  background: #c0c0c0;
+  padding:2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%; 
+  box-sizing: border-box; 
+  margin-bottom: 1rem; 
+}
+.faq div {
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+}
+.faq__icon{
+  background: transparent;
+  color:var(--color-gray-100);
+  font-size: 1.5rem;
+
+}
+.faq p{
+  margin-top: 1.5rem;
+  color: black;
+}
+
+.intro__faqs{
+  margin-top:2rem;
+  color:black;
+  
+}
+.faq h4{
+  font-size: 1.2rem;
+}
+
+/*-- Testimonials--*/
+
+.testimonials{
+  width: 50rem;
+  margin-inline: auto;
+}
+.testimonials__head{
+  justify-content: center;
+}
+
+.card.testimonial{
+  position: relative;
+  text-align: left;
+  margin-top: 5rem;
+}
+.testimonial__avatar{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  overflow: hidden;
+  position: absolute;
+  top:-2rem;
+  left:calc(50% - 2rem);
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}
+.testimonial:hover.testimonial__avatar{
+  border-radius: 50%;
+  border-color: var(--color-gray-400);
+}
+
+.testimonial__quote{
+  font-style: italic;
+  margin: 1rem 0 2rem;
+}
+
+.card small.testimonial__title{
+  margin-top: 0.3rem;
+}
+
+.testimonials__btn-container{
+  width: fit-content;
+  margin: 2.5rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+.testimonials__btn{
+  background: transparent;
+  cursor: pointer;
+}
+
+.testimonials__btn svg{
+  fill:black;
+  font-size:1rem;
+  width: 2rem;
+  height: 2rem;
+}
+/*Clients*/
+
+.clients-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.client-carousel {
+  width: 80%; 
+  margin: 0 auto; 
+  
+}
+
+.client-slide {
+  padding: 0 10px;
+}
+
+.client-logo {
+  width: 60%;
+  max-height: 70px;  
+  object-fit: contain; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+}
+/*-- Footer--*/
+footer{
+  background: #c0c0c0;;
+  margin-top: 7rem;
+  padding-top: 7rem;
+  font-size: 0.9rem;
+  color:var(--color-gray-600);
+
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 26rem 1fr 1fr 1fr;
+  gap : 6rem;
+  
+}
+
+
+.footer__container article{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:0.7rem;
+ 
+}
+
+.footer__container article p{
+  margin-top: 0.5rem;
+  
+}
+.footer__container article h4{
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+.footer__socials{
+  margin-top: 1.5rem;
+  display:flex ;
+  gap:1rem;
+  align-items:center;
+}
+.footer__socials a{
+  background: var(--color-gray-100);
+  padding: 0.7rem;
+  border:1px solid transparent;
+  border-radius: 0.6rem;
+  transition: var(--transition);
+  
+}
+
+
+.footer__socials a svg {
+ color:var(--color-gray-600)
+}
+
+.footer__socials a:hover{
+  border-color:var(--color-gray-100);
+  background: transparent;
+}
+
+.footer__proged{
+  color:var(--color-gray-600);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 2px solid var(--color-gray-100);
+  margin-top:5rem;
+
+}
+
+.days__work,
+.phone__number,
+.email__adress   {
+ color:var(--color-gray-600);
+
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.footer__container article a {
+  color:var(--color-gray-600);
+}
+
+/* MEDIA QUERIES (medium screens)*/
+
+@media screen and (max-width: 1024px){
+  /*MAIN HEADER*/
+  .main__header{
+    height: fit-content;
+    padding: 12rem 0;
+  }
+  .main__header-container{
+    gap:0;
+  }
+
+  /* PROGRAMS*/
+  .programs__wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* FAQs*/
+  .faqs__wrapper{
+    grid-template-columns: 1fr;
+  }
+  /* TESTIMONIALS*/
+
+  .testimonials{
+    width: 75%;
+  }
+ /* Footer*/
+
+ .footer__container{
+  grid-template-columns: 1fr 1fr;
+  gap:4rem;
+
+ }
+
+}
+
+/* MEDIA QUERIES (small screens)*/
+
+@media screen and (max-width: 600px){
+  /*MAIN HEADER*/
+  .main__header{
+    margin-top: 0;
+    padding: 12rem 0 0;
+    height: 100vh;
+  }
+  .main__header-image{
+    display: none;
+  }
+
+  .main__header-container{
+    grid-template-columns: 1fr;
+  }
+  /*PROGRAMS*/
+  .programs__wrapper{
+    grid-template-columns: 1fr;
+    gap:2rem;
+    margin-top:3rem;
+  }
+  .programs__program{
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .card.values__value{
+    width:84%;
+    margin-inline: auto;
+  }
+  /*FAQs*/
+  .faqs__wrapper{
+    gap:1rem;
+    margin-top: 3rem;
+  }
+  /*TESTIMONIALS*/
+  .testimonials{
+    width: 100%;
+  }
+
+  /*FOOTER*/
+
+  footer{
+    margin-top: 7rem;
+  }
+
+  .footer__container{
+    grid-template-columns: 1fr;
+    gap:3rem
+  }
+  .footer__container article{
+    align-items: center;
+  }
+
+  .footer__container article p {
+    text-align: center;
+  }
+
+
+}
+
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-icon {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+

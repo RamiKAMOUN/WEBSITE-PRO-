@@ -1,0 +1,77 @@
+.accueil__header {
+  margin-top: 5rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.headerAccueil__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: fadeInUp 1.5s ease-out; /* Add animation to the container */
+}
+
+.headerAccueil__container-bg {
+  position: absolute;
+  width: 100%;
+}
+
+.HeaderAccueil__content {
+  position: relative;
+  width: 44%;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--color-gray-100);
+  animation: fadeIn 1.5s ease-out; /* Add animation to the content */
+}
+
+.HeaderAccueil__content h2 {
+  margin-bottom: 1rem;
+  animation: slideInDown 1.5s ease-out; /* Add animation to h2 */
+}
+
+.HeaderAccueil__content p {
+  color: var(--color-gray-100);
+  animation: slideInUp 1.5s ease-out; /* Add animation to p */
+}
+
+/* Define animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
